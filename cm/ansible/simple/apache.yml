@@ -8,6 +8,8 @@
       name: apache2
       state: latest
       update_cache: true
+      notify:
+       - restart apache
   - name: ensure apache is running
     service:
       name: apache2
