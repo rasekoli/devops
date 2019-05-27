@@ -23,6 +23,7 @@ resource "aws_instance" "web" {
         tags {
                 Name    = "${var.tag_name}"
         }
+	# "remote-exec" makes sure and waits for ssh to be up and running
 	provisioner "remote-exec" {
                 inline = ["echo 'Hello world!'"]
                 connection {
