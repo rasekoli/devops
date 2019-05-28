@@ -1,0 +1,6 @@
+---
+# handlers file for test-role-1
+ - name: Restart Apache
+   service:
+    name: apache2
+    state: restarted
