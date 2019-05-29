@@ -1,4 +1,5 @@
 ---
+# Create new role structure with: ansible-galaxy init <role-name>
 - hosts: servers
   remote_user: ubuntu
   become: yes

@@ -1,0 +1,7 @@
+# ansible-galaxy install geerlingguy.php
+---
+- hosts: servers
+  remote_user: ubuntu
+  become: yes
+  roles:
+   - geerlingguy.php
