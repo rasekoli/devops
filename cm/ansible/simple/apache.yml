@@ -1,5 +1,5 @@
 ---
-- hosts: servers
+- hosts: servers:databases
   remote_user: ubuntu
   become: true
   tasks:
@@ -8,8 +8,8 @@
       name: apache2
       state: latest
       update_cache: true
-      notify:
-       - restart apache
+    notify:
+     - restart apache
   - name: ensure apache is running
     service:
       name: apache2
