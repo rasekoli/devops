@@ -1,0 +1,9 @@
+[web]
+18.185.130.175 ansible_ssh_private_key_file=/home/ubuntu/.ssh/aws-keypair.pem  ansible_python_interpreter=/usr/bin/python3
+
+[db]
+3.122.55.251 ansible_ssh_private_key_file=/home/ubuntu/.ssh/aws-keypair.pem  ansible_python_interpreter=/usr/bin/python3
+
+[backend:children]
+web
+db

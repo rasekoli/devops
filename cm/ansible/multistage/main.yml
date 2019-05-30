@@ -1,0 +1,9 @@
+---
+- hosts: backend
+  remote_user: ubuntu
+  become: yes
+  tasks:
+   - debug:
+       msg:
+        - "{{WEBROOT}}"
+        - "{{ENV}}"

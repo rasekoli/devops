@@ -2,7 +2,7 @@
 18.194.141.186	ansible_ssh_private_key_file=/home/ubuntu/.ssh/aws-keypair.pem	ansible_python_interpreter=/usr/bin/python3
 
 [databases]
-18.194.141.186  ansible_ssh_private_key_file=/home/ubuntu/.ssh/aws-keypair.pem  ansible_python_interpreter=/usr/bin/python3
+3.122.55.251  ansible_ssh_private_key_file=/home/ubuntu/.ssh/aws-keypair.pem  ansible_python_interpreter=/usr/bin/python3
 
 
 # This is the default ansible 'hosts' file.
