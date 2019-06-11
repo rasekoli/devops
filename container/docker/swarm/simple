@@ -1,0 +1,7 @@
+# docker swarm init
+# docker swarm join --token SWMTKN-1-28x93vf6oi2eepv0h5gb3v6qd9r6o9vcxb9mf4213sgd8mmckx-413ii9rf627iq24sgshvjey8k 172.31.24.92:2377
+# docker node ls
+# docker service create -p 80:80 --name webserver nginx:latest
+# docker service scale webserver=10
+# docker service ps webserver
+# docker service ls
