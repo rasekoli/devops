@@ -1,0 +1,6 @@
+docker build . -t nodejs:1.0
+gcloud auth configure-docker
+docker tag nodejs:1.0 eu.gcr.io/devops-213919/nodejs:1.0
+docker push eu.gcr.io/devops-213919/nodejs:1.0
+Console: Create cluster --> Add deployment based on image --> Expose Load Balancer service
+Rolling update: Build new image --> kubectl set image deployment/nodejs.qa nodejs-sha256=eu.gcr.io/devops-213919/nodejs:2.0 --namespace qa

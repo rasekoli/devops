@@ -1,0 +1,3 @@
+VIRTUAL_HOST=qa.virtualhost.local
+NODE_ENV=qa
+PORT=8080
